@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DetailsService } from 'src/app/services/details.service';
 
 @Component({
   selector: 'app-about-page',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _detailservice: DetailsService) { }
+
+  bioData: any = {};
 
   ngOnInit(): void {
+    this._detailservice.getData().subscribe(
+      data => {
+        this.bioData = data;
+        console.log(data);
+      }
+    )
   }
 
 }

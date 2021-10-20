@@ -57,7 +57,7 @@
                                     <span class="fa fa-map-marker icon-adjust"></span>
                                 </div>
                                 <div class="text pl-3">
-                                <p><span>Address:</span> 7 Asajon Wy, Eti-Osa 106104, Sangotedo·</p>
+                                <p><span>Address:</span> {{bioData.address["street"]}} {{bioData.address["city"]}}·</p>
                               </div>
                           </div>
                             <div class="dbox w-100 d-flex align-items-center">
@@ -65,7 +65,7 @@
                                     <span class="fa fa-phone icon-adjust"></span>
                                 </div>
                                 <div class="text pl-3">
-                                <p><span>Phone:</span> <a href="#">+234-8168419911</a></p>
+                                <p><span>Phone:</span> <a href="#">{{bioData.phonenumber}}</a></p>
                               </div>
                           </div>
                             <div class="dbox w-100 d-flex align-items-center">
@@ -73,7 +73,7 @@
                                     <span class="fa fa-paper-plane icon-adjust"></span>
                                 </div>
                                 <div class="text pl-3">
-                                <p><span>Email:</span> <a href="#">edore7@gmail.com</a></p>
+                                <p><span>Email:</span> <a href="#">{{bioData.email}}</a></p>
                               </div>
                           </div>
                             <!-- <div class="dbox w-100 d-flex align-items-center">

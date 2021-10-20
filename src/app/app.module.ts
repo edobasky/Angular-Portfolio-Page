@@ -9,6 +9,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { InterestsComponent } from './components/interests/interests.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { HttpClientModule } from '@angular/common/http';
+import {DetailsService} from './services/details.service'
 
 @NgModule({
   declarations: [
@@ -22,9 +24,11 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
     ContactMeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [DetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

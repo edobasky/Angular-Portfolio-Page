@@ -1,19 +1,19 @@
 <section class="resume-section" id="about">
     <div class="resume-section-content">
         <h1 class="mb-0">
-            Edore
-            <span class="text-primary">Uvieghara</span>
+            {{bioData.lastname}}
+            <span class="text-primary">{{bioData.firstname}}</span>
         </h1>
         <div class="subheading mb-5">
-            7 Asajon Wy, Eti-Osa 106104, Sangotedo·
-            <a href="#">edore7@gmail.com</a>
+            {{bioData.address["street"]}} {{bioData.address["city"]}}, {{bioData.address["state"]}}. {{bioData.address["country"]}}
+            <a href="#">{{bioData.email}}</a>
         </div>
         <p class="lead mb-5">I am a <strong>software engineer</strong> with an entrepreneural spirit, who is interested making positive impact to my environment through tech.</p>
         <div class="social-icons">
-            <a class="social-icon" href="https://www.linkedin.com/in/edore-uvieghara-emmanuel-72171757/"><i class="fab fa-linkedin-in"></i></a>
-            <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-            <!-- <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-            <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a> -->
+            <a class="social-icon" href="http://{{bioData.socialHandle[1].address}}/index.html" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <!-- <a class="social-icon" href="#!"><i class="fab fa-github"></i></a> -->
+             <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a> 
+            <!-- <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a> -->
         </div>
     </div>
 </section>
